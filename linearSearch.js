@@ -1,4 +1,6 @@
-let a = [5, 80, 4, 8, 12, 3, 1,7];
+// find the x value in the given array
+
+let a = [5, 80, 4, 8, 12, 3, 1, 7];
 let x = 7;
 check = false;
 for (let i = 0; i < a.length; i++) {
