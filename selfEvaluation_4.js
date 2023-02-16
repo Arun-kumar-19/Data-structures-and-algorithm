@@ -8,13 +8,23 @@
 let a = [4, 5, 10, 11, 1];
 let k = 3;
 
-let a_1 = [];
+let arrayFor = [];
 
-for (let i = 0; i < a.length; i++) {
+for (let i = 0; i < k; i++) {
   let n = 0;
-  for (let j = i; j < k; j++) {
+  for (let j = i; j < k + i; j++) {
     n += a[j];
   }
-  a_1.push(n);
+  arrayFor.push(n);
 }
-console.log(a_1);
+console.log(arrayFor);
+
+let maxInArray = arrayFor[0];
+for (let i = 1; i < arrayFor.length; i++) {
+  if (maxInArray < arrayFor[i]) {
+    maxInArray = arrayFor[i];
+  } else {
+    maxInArray = maxInArray;
+  }
+}
+console.log("The maximum is " + maxInArray);
