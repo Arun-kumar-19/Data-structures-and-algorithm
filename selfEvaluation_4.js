@@ -23,8 +23,6 @@ let maxInArray = arrayFor[0];
 for (let i = 1; i < arrayFor.length; i++) {
   if (maxInArray < arrayFor[i]) {
     maxInArray = arrayFor[i];
-  } else {
-    maxInArray = maxInArray;
   }
 }
 console.log("The maximum is " + maxInArray);

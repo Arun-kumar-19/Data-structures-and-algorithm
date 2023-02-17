@@ -32,8 +32,8 @@ let mark = [];
 let arrays = students_db_array.marks;
 
 for (let i = 0; i < students_db_array.length; i++) {
-  if (x < arrays[i].physics) {
-    mark.push(arrays[i]);
+  if (x < students_db_array[i].marks.physics) {
+    mark.push(students_db_array[i].name);
   }
 }
-console.log(mark.physics + " is more scored");
+console.log(mark + "'s physics score  more than 70");
