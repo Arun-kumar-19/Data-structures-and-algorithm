@@ -1,13 +1,13 @@
-// 2. For a given positive integer n, it should print every number from 1 to n
-// except x
-// for eg:
-// let n = 10;
-// let x = 5;
+// 1. Given 2 numbers it should print if they are equal or not equal,
+// let a = 10;
+// let b = 20;
+// It should either a is equal to b or a is NOT equal to b
 
-let n = 10;
-let x = 5;
-for (let i = 1; i <= n; i++) {
-  if (x != i) {
-    console.log(i);
-  }
+let a = 10;
+let b = 20;
+
+if (a === b) {
+  console.log(a + " is equal to " + b);
+} else {
+  console.log(a + " is not equal to " + b);
 }

@@ -1,13 +1,13 @@
-// 3. Given an array, print the sum of all even numbers in the array
-// let a = [4, 3, 17, 10, 11];
-// it should print 14
+// 2. For a given positive integer n, it should print every number from 1 to n
+// except x
+// for eg:
+// let n = 10;
+// let x = 5;
 
-let a = [4, 3, 17, 10, 11, 12];
-let n = 0;
-
-for (let i = 0; i < a.length; i++) {
-  if (a[i] % 2 == 0) {
-    n += a[i];
+let n = 10;
+let x = 5;
+for (let i = 1; i <= n; i++) {
+  if (x != i) {
+    console.log(i);
   }
 }
-console.log(n);

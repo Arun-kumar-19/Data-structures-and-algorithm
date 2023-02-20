@@ -1,28 +1,13 @@
-// 4. Given an array of length n and k (k < n)
-// find the maximum sum of k consecutive numbers.
-// for eg:
-// let a = [4,5, 10, 11, 1];
-// let k = 3;
-// The maximum is 26.
+// 3. Given an array, print the sum of all even numbers in the array
+// let a = [4, 3, 17, 10, 11];
+// it should print 14
 
-let a = [4, 5, 10, 11, 1];
-let k = 3;
+let a = [4, 3, 17, 10, 11, 12];
+let n = 0;
 
-let arrayFor = [];
-
-for (let i = 0; i < k; i++) {
-  let n = 0;
-  for (let j = i; j < k + i; j++) {
-    n += a[j];
-  }
-  arrayFor.push(n);
-}
-console.log(arrayFor);
-
-let maxInArray = arrayFor[0];
-for (let i = 1; i < arrayFor.length; i++) {
-  if (maxInArray < arrayFor[i]) {
-    maxInArray = arrayFor[i];
+for (let i = 0; i < a.length; i++) {
+  if (a[i] % 2 == 0) {
+    n += a[i];
   }
 }
-console.log("The maximum is " + maxInArray);
+console.log(n);
