@@ -8,7 +8,7 @@ but if n = 12 then n%1 ==0 and n%2==0, n%3 == 0, n%4 == 0, n%6==0 hence its not 
 
 Your code should work for any value of n
 */
-let n = 12;
+let n = 678687;
 
 if (n % 2 == 0 || n % 3 == 0 || n % 5 == 0 || n % 7 == 0 || n % 9 == 0) {
   console.log(n + " is not a prime number");

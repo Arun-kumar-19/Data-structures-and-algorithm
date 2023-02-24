@@ -5,7 +5,7 @@ let vowel = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
 
 let string = "";
 
-let result = "I have to do this";
+let result = "sabana";
 
 for (let i = 0; i < result.length; i++) {
   if (!vowel.includes(result[i])) {

@@ -1,6 +1,6 @@
 // 7) Write a program to check if a number is Positive, Negative or zero.
 
-let n = 993;
+let n = 87;
 
 if (n > 0) {
   console.log("Given number is positive");
