@@ -1,21 +1,21 @@
 let n = 4;
 
 function strair(n) {
-  let str = "";
+  let str1 = "";
   for (let i = 1; i <= n; i++) {
-    str = i + " ";
+    str1 = i;
     // console.log(str);
   }
-  return str;
+  return str1;
 }
 
 function detair(n) {
-  let str = "";
-  for (let i = n; i <= 1; i--) {
-    str = i + " ";
+  for (let i = n; i >= 1; i--) {
+    let str2 = "";
+    str2 = i + " ";
     // console.log(str);
+    return str2;
   }
-  return str;
 }
 
 function space(n) {
@@ -29,10 +29,11 @@ function space(n) {
 
 for (let i = 1; i <= n; i++) {
   let out1 = space(i) + strair(i);
-  console.log(out1);
+  let out2 = space(n + i + (n - i)) + strair(i);
+  console.log(out1 + out2);
 }
 
-for (let i = 1; i <= n; i++) {
-  let out2 = space(n - i) + detair(n - i);
-  console.log(out2);
-}
+// for (let j = n - 1; j >= 1; j--) {
+//   let out2 = space(j) + detair(j);
+//   console.log(out2);
+// }
