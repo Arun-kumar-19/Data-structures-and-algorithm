@@ -5,7 +5,7 @@
 1 2 3 4 3 2 1
 */
 
-let n = 8;
+let n = 4;
 
 function stair(n) {
   let str = "";
